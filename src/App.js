@@ -1,18 +1,16 @@
-import logo from "./logo.svg"
 import "./App.css"
 
-// import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Navbar from "./components/Navbar/Navbar"
-import StickyHeadTable from "./components/Table/StickyHeadTable"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+
+import { Home } from "./pages/home/Home"
 
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
-        <Route path="/home" element={}></Route>
-      </Routes> */}
-      <Navbar />
-      <StickyHeadTable />
+      <Routes>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="*" element={<Home />}></Route>
+      </Routes>
     </div>
   )
 }
