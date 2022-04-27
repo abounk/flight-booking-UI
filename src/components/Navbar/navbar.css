@@ -1,0 +1,16 @@
+.navbar__container {
+    width: 100%;
+    background-color: #00012e;
+}
+
+.navbar__wrapper {
+    margin: 0 auto;
+    max-width: 1660px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #FFFFFF;
+}
